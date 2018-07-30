@@ -13,4 +13,5 @@ WORKDIR /usr/src/turfs
 ADD Gemfile      /usr/src/turfs/Gemfile
 ADD Gemfile.lock /usr/src/turfs/Gemfile.lock
 RUN bundle install
+RUN yarn install
 ADD . /usr/src/turfs
